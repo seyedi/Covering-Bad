@@ -2,7 +2,7 @@
 
 #####A simple jQuery Plugin for cover an item by another item with dragging ability.
 
-####[Live View](http://seyedi.github.io/Covering-Bad)
+####[Live View On Codepen](http://codepen.io/seyedi/full/tJzav)
 
 ## 
 #Usage
