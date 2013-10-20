@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Covering Bad</title>
+	<link rel="stylesheet" href="css/coveringBad.css" type="text/css"/>
+	<link rel="stylesheet" href="css/demo.css" type="text/css"/>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css"/>
+</head>
+<body>
+	<h1>Covering Bad</h1>
+	<h2>Drag the handler</h2>
+	<div class="covered first">
+		<div class="handler"></div>
+		<div class="changeable"></div>
+	</div>
+
+	<div class="covered second">
+		<div class="handler"></div>
+		<div class="changeable"></div>
+	</div>
+
+	<div class="covered third">
+		<div class="handler"></div>
+		<div class="changeable"></div>
+	</div>
+
+	<div class="covered fourth">
+		<div class="handler"></div>
+		<div class="changeable"></div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/coveringBad.js"></script>
+	<script type="text/javascript">
+
+		$('.first').coveringBad({
+			marginY : 30 ,
+			marginX : 30 ,
+			setX  : 200,
+			setY  : 100 ,
+			direction   : "vertical"
+		});
+
+		$('.second').coveringBad({
+			marginY : 20 ,
+			marginX : 20 ,
+			setX  : 210,
+			setY  : 140 ,
+			direction   : "horizontal"
+		});
+
+		$('.third').coveringBad();
+
+		$('.fourth').coveringBad({
+			marginY : 20 ,
+			marginX : 400 ,
+			setX  : 400,
+			setY  : 235 ,
+			direction   : "vertical"
+		});
+
+	</script>
+</body>
+</html>
