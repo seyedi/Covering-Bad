@@ -26,7 +26,7 @@ $.fn.coveringBad = function(options) {
 
 		var $this = $(this),
 				$changeable = $this.find('>.changeable'),
-				$handler = $this.find('>.handler'),
+				$handle = $this.find('>.handle'),
 				width  = $this.innerWidth(),
 				height = $this.innerHeight(),
 				pos_x  = null,
@@ -52,9 +52,9 @@ $.fn.coveringBad = function(options) {
 			setY = min_top;
 		}
 
-		$handler.append('<span class="left icon-chevron-left"></span><span class="right icon-chevron-right"/></span>')
-		$handler.css('left', setX);
-		$handler.css('top', setY);
+		$handle.append('<span class="left icon-chevron-left"></span><span class="right icon-chevron-right"/></span>')
+		$handle.css('left', setX);
+		$handle.css('top', setY);
 
 		// Direction
 		//////////////////////////////////
@@ -69,25 +69,25 @@ $.fn.coveringBad = function(options) {
 					$this.height($changeable.height());        		
 					$changeable.height(setY);        		
 					$changeable.css('border-bottom', '1px dashed #FFF');
-					$handler.addClass('vertical');
+					$handle.addClass('vertical');
 		}
 
 		// Dragging Bad
 		//////////////////////////////////
 
-		$handler.on('mousedown', function(event) {
+		$handle.on('mousedown', function(event) {
 
 			event.preventDefault();
-			$handler.addClass('draggable');
-			pos_x  = parseInt($handler.css('left'));
+			$handle.addClass('draggable');
+			pos_x  = parseInt($handle.css('left'));
 			startX = event.pageX;
-			pos_y  = parseInt($handler.css('top'));
+			pos_y  = parseInt($handle.css('top'));
 			startY = event.pageY;
 
 		});
 
 		$(document).on('mouseup' , function(event) {
-			 $handler.removeClass('draggable');
+			 $handle.removeClass('draggable');
 		});
 
 		$this.bind('mousemove', dragger);

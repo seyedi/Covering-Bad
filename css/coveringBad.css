@@ -2,7 +2,7 @@
 	position: relative;
 }
 
-.handler {
+.handle {
 	position: absolute;
 	width : 46px;
 	height: 46px;
@@ -13,7 +13,7 @@
 	text-align : center;
 }
 
-.handler span {
+.handle span {
 	display : inline-block;
 	margin : 15px 1px 0;
 	color : #000;
@@ -24,7 +24,7 @@
 	transition : .1s ease-out;
 }
 
-.handler.vertical {
+.handle.vertical {
 	-webkit-transform : rotate(90deg);
 	-moz-transform : rotate(90deg);
 	-ms-transform : rotate(90deg);
@@ -32,11 +32,11 @@
 	transform : rotate(90deg);
 }
 
-.handler:hover {
+.handle:hover {
 	background-color: #555;
 }
 
-.handler:hover span {
+.handle:hover span {
 	color : #FFF;
 }
 
