@@ -1,4 +1,4 @@
-![Covering Bad](https://raw.github.com/seyedi/Covering-Bad/raw/master/images/logo.jpg)
+![Covering Bad](https://raw.github.com/seyedi/Covering-Bad/master/images/logo.jpg)
 
 #####A simple jQuery Plugin for cover an item by another item with dragging ability.
 
@@ -10,17 +10,17 @@ http://seyedi.github.io/Covering-Bad
 
 ####Include:
 ```html
-	<link rel="stylesheet" href="css/coveringBad.css" type="text/css"/>
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css"/>
-	<script type="text/javascript" src="js/coveringBad.js"></script>
+<link rel="stylesheet" href="css/coveringBad.css" type="text/css"/>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"/>
+<script src="js/coveringBad.js" type="text/javascript"></script>
 ```
 
 ####Html:
 ```html
-	<div class="covered">
-		<div class="handle"></div>
-		<div class="changeable"></div>
-	</div>
+<div class="covered">
+	<div class="handle"></div>
+	<div class="changeable"></div>
+</div>
 ```
 
 ####js:
@@ -34,13 +34,13 @@ $(function() {
  
 ###Options:
 ```
-    >js
+>js
 
-    	marginY : 20, 	// Handle's distance from top and bottom
-		marginX : 20, 	// Handle's distance from left and right
-		setX    : 30, 	// Defulat location for handle from left
-		setY    : 150,  // Defulat location for handle from top
-		direction : "horizontal" // would be horizontal/vertical
+	marginY : 20, 	// Handle's distance from top and bottom
+	marginX : 20, 	// Handle's distance from left and right
+	setX    : 30, 	// Defulat location for handle from left
+	setY    : 150,  // Defulat location for handle from top
+	direction : "horizontal" // would be horizontal/vertical
 
 
 ```
@@ -48,18 +48,18 @@ $(function() {
 ###Multiplication :
 
 ```html
-	<div class="covered first">
-		<div class="handle"></div>
-		<div class="changeable"></div>
-	</div>
-	<div class="covered second">
-		<div class="handle"></div>
-		<div class="changeable"></div>
-	</div>
-	<div class="covered third">
-		<div class="handle"></div>
-		<div class="changeable"></div>
-	</div>
+<div class="covered first">
+	<div class="handle"></div>
+	<div class="changeable"></div>
+</div>
+<div class="covered second">
+	<div class="handle"></div>
+	<div class="changeable"></div>
+</div>
+<div class="covered third">
+	<div class="handle"></div>
+	<div class="changeable"></div>
+</div>
 ```
 
 ```js
