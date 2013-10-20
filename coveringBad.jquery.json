@@ -21,8 +21,5 @@
     "bugs": "https://github.com/seyedi/Covering-Bad/issues",
     "homepage": "https://github.com/seyedi/Covering-Bad",
     "docs": "https://github.com/seyedi/Covering-Bad",
-    "download": "http://code.jquery.com/#coveringBad",
-    "dependencies": {
-        "jquery": ">=1.5"
-    }
+    "download": "https://github.com/seyedi/Covering-Bad/archive/master.zip",
 }
