@@ -1,0 +1,28 @@
+{
+    "name": "coveringBad",
+    "title": "jQuery Covering Bad Plugin",
+    "description": "A simple jQuery Plugin for cover an item by another item with dragging ability.",
+    "keywords": [
+        "cover",
+        "drag"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Mojtaba Seyedi",
+        "email": "seyedmojtabaseyedi@gmail.com",
+        "url": "https://github.com/seyedi"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://seyedi.mit-license.org"
+        }
+    ],
+    "bugs": "https://github.com/seyedi/Covering-Bad/issues",
+    "homepage": "https://github.com/seyedi/Covering-Bad",
+    "docs": "https://github.com/seyedi/Covering-Bad",
+    "download": "http://code.jquery.com/#coveringBad",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
