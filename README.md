@@ -2,17 +2,16 @@
 
 #####A simple jQuery Plugin for cover an item by another item with dragging ability.
 
-####Live View:
-http://seyedi.github.io/Covering-Bad
+####[Live View](http://seyedi.github.io/Covering-Bad)
 
 ## 
 #Usage
 
 ####Include:
 ```html
-<link rel="stylesheet" href="css/coveringBad.css" type="text/css"/>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"/>
-<script src="js/coveringBad.js" type="text/javascript"></script>
+<link href="css/coveringBad.css" type="text/css"/>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"/>
+<script src="js/coveringBad.js" ></script>
 ```
 
 ####Html:
@@ -75,3 +74,7 @@ $(function() {
 	});
 });
 ```
+
+# License
+
+MIT [http://seyedi.mit-license.org](http://seyedi.mit-license.org)
