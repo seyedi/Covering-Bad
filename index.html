@@ -1,132 +1,65 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Covering-bad by seyedi</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Covering Bad</title>
+	<link rel="stylesheet" href="css/coveringBad.css" type="text/css"/>
+	<link rel="stylesheet" href="css/demo.css" type="text/css"/>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css"/>
+</head>
+<body>
+	<h1>Covering Bad</h1>
+	<h2>Drag the handle</h2>
+	<div class="covered first">
+		<div class="handle"></div>
+		<div class="changeable"></div>
+	</div>
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/seyedi/Covering-Bad">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/seyedi/Covering-Bad/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/seyedi/Covering-Bad/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+	<div class="covered second">
+		<div class="handle"></div>
+		<div class="changeable"></div>
+	</div>
 
-    <div class="wrapper">
+	<div class="covered third">
+		<div class="handle"></div>
+		<div class="changeable"></div>
+	</div>
 
-      <section>
-        <div id="title">
-          <h1>Covering-bad</h1>
-          <p>A simple jQuery Plugin for cover an item by another item with dragging ability</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/seyedi">seyedi</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+	<div class="covered fourth">
+		<div class="handle"></div>
+		<div class="changeable"></div>
+	</div>
 
-        <p><img src="https://raw.github.com/seyedi/Covering-Bad/master/images/logo.jpg" alt="Covering Bad"></p>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/coveringBad.js"></script>
+	<script type="text/javascript">
 
-<h5>
-<a name="a-simple-jquery-plugin-for-cover-an-item-by-another-item-with-dragging-ability" class="anchor" href="#a-simple-jquery-plugin-for-cover-an-item-by-another-item-with-dragging-ability"><span class="octicon octicon-link"></span></a>A simple jQuery Plugin for cover an item by another item with dragging ability.</h5>
+		$('.first').coveringBad({
+			marginY : 30 ,
+			marginX : 30 ,
+			setX  : 200,
+			setY  : 100 ,
+			direction   : "vertical"
+		});
 
-<h4>
-<a name="live-view-on-codepen" class="anchor" href="#live-view-on-codepen"><span class="octicon octicon-link"></span></a><a href="http://codepen.io/seyedi/full/tJzav">Live View On Codepen</a>
-</h4>
+		$('.second').coveringBad({
+			marginY : 20 ,
+			marginX : 20 ,
+			setX  : 210,
+			setY  : 140 ,
+			direction   : "horizontal"
+		});
 
-<h1>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+		$('.third').coveringBad();
 
-<h4>
-<a name="include" class="anchor" href="#include"><span class="octicon octicon-link"></span></a>Include:</h4>
+		$('.fourth').coveringBad({
+			marginY : 20 ,
+			marginX : 400 ,
+			setX  : 400,
+			setY  : 235 ,
+			direction   : "vertical"
+		});
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/coveringBad.css"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/coveringBad.js"</span> <span class="nt">&gt;&lt;/script&gt;</span>
-</pre></div>
-
-<h4>
-<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>Html:</h4>
-
-<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-
-<h4>
-<a name="js" class="anchor" href="#js"><span class="octicon octicon-link"></span></a>js:</h4>
-
-<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.covered'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">();</span>
-<span class="p">});</span>
-</pre></div>
-
-<h3>
-<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options:</h3>
-
-<pre><code>&gt;js
-
-    marginY : 20,   // Handle's distance from top and bottom
-    marginX : 20,   // Handle's distance from left and right
-    setX    : 30,   // Defulat location for handle from left
-    setY    : 150,  // Defulat location for handle from top
-    direction : "horizontal" // would be horizontal/vertical
-
-
-</code></pre>
-
-<h3>
-<a name="multiplication-" class="anchor" href="#multiplication-"><span class="octicon octicon-link"></span></a>Multiplication :</h3>
-
-<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered first"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered second"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered third"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></div>
-
-<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.first'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">();</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.second'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">();</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s1">'.third'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">({</span>
-        <span class="nx">marginY</span> <span class="o">:</span> <span class="mi">20</span> <span class="p">,</span>
-        <span class="nx">marginX</span> <span class="o">:</span> <span class="mi">400</span> <span class="p">,</span>
-        <span class="nx">setX</span>  <span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
-        <span class="nx">setY</span>  <span class="o">:</span> <span class="mi">235</span> <span class="p">,</span>
-        <span class="nx">direction</span>   <span class="o">:</span> <span class="s2">"vertical"</span>
-    <span class="p">});</span>
-<span class="p">});</span>
-</pre></div>
-
-<h1>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
-
-<p>MIT <a href="http://seyedi.mit-license.org">http://seyedi.mit-license.org</a></p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+	</script>
+</body>
 </html>
