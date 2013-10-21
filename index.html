@@ -38,37 +38,91 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <p><img src="https://raw.github.com/seyedi/Covering-Bad/master/images/logo.jpg" alt="Covering Bad"></p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<h5>
+<a name="a-simple-jquery-plugin-for-cover-an-item-by-another-item-with-dragging-ability" class="anchor" href="#a-simple-jquery-plugin-for-cover-an-item-by-another-item-with-dragging-ability"><span class="octicon octicon-link"></span></a>A simple jQuery Plugin for cover an item by another item with dragging ability.</h5>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<h4>
+<a name="live-view-on-codepen" class="anchor" href="#live-view-on-codepen"><span class="octicon octicon-link"></span></a><a href="http://codepen.io/seyedi/full/tJzav">Live View On Codepen</a>
+</h4>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<h4>
+<a name="include" class="anchor" href="#include"><span class="octicon octicon-link"></span></a>Include:</h4>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/coveringBad.css"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/coveringBad.js"</span> <span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<h4>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>Html:</h4>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+<h4>
+<a name="js" class="anchor" href="#js"><span class="octicon octicon-link"></span></a>js:</h4>
+
+<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.covered'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options:</h3>
+
+<pre><code>&gt;js
+
+    marginY : 20,   // Handle's distance from top and bottom
+    marginX : 20,   // Handle's distance from left and right
+    setX    : 30,   // Defulat location for handle from left
+    setY    : 150,  // Defulat location for handle from top
+    direction : "horizontal" // would be horizontal/vertical
+
+
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="multiplication-" class="anchor" href="#multiplication-"><span class="octicon octicon-link"></span></a>Multiplication :</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered first"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered second"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"covered third"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"handle"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"changeable"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<div class="highlight highlight-js"><pre><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.first'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.second'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'.third'</span><span class="p">).</span><span class="nx">coveringBad</span><span class="p">({</span>
+        <span class="nx">marginY</span> <span class="o">:</span> <span class="mi">20</span> <span class="p">,</span>
+        <span class="nx">marginX</span> <span class="o">:</span> <span class="mi">400</span> <span class="p">,</span>
+        <span class="nx">setX</span>  <span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
+        <span class="nx">setY</span>  <span class="o">:</span> <span class="mi">235</span> <span class="p">,</span>
+        <span class="nx">direction</span>   <span class="o">:</span> <span class="s2">"vertical"</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h1>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>MIT <a href="http://seyedi.mit-license.org">http://seyedi.mit-license.org</a></p>
       </section>
 
     </div>
