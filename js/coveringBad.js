@@ -41,6 +41,9 @@ $.fn.coveringBad = function(options) {
 				setX = settings.setX,
 				setY = settings.setY;
 
+		$this.css('background-image', 'url('+$this.data('passive')+')');
+		$changeable.css('background-image', 'url('+$this.data('active')+')');
+
 
 		$changeable.height($this.height());
 
