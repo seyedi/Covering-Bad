@@ -44,7 +44,7 @@ $(function() {
 
 ```
 
-###Multiplication :
+###More than one :
 
 ```html
 <div class="covered first">
