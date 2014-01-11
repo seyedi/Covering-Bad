@@ -78,3 +78,5 @@ $(function() {
 # License
 
 MIT [http://seyedi.mit-license.org](http://seyedi.mit-license.org)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/seyedi/covering-bad/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
