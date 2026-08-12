@@ -1,0 +1,26 @@
+{
+  "name": "covering-bad",
+  "version": "2.0.0",
+  "description": "A simple, dependency-free vanilla JS plugin for covering an item with another item, with dragging ability.",
+  "main": "js/coveringBad.js",
+  "keywords": [
+    "cover",
+    "drag",
+    "vanilla-js",
+    "pointer-events"
+  ],
+  "author": {
+    "name": "Mojtaba Seyedi",
+    "email": "seyedmojtabaseyedi@gmail.com",
+    "url": "https://github.com/seyedi"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seyedi/Covering-Bad/issues"
+  },
+  "homepage": "https://github.com/seyedi/Covering-Bad",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seyedi/Covering-Bad.git"
+  }
+}
